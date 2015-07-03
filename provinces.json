@@ -1,0 +1,217 @@
+[
+  {
+    "pretty_name": "Albacete", 
+    "code_number": "2", 
+    "code_name": "albacete"
+  }, 
+  {
+    "pretty_name": "Alicante", 
+    "code_number": "3", 
+    "code_name": "alicante"
+  }, 
+  {
+    "pretty_name": "Almería", 
+    "code_number": "4", 
+    "code_name": "almeria"
+  }, 
+  {
+    "pretty_name": "Asturias", 
+    "code_number": "33", 
+    "code_name": "asturias"
+  }, 
+  {
+    "pretty_name": "Ávila", 
+    "code_number": "5", 
+    "code_name": "avila"
+  }, 
+  {
+    "pretty_name": "Badajoz", 
+    "code_number": "6", 
+    "code_name": "badajoz"
+  }, 
+  {
+    "pretty_name": "Balears, Illes", 
+    "code_number": "7", 
+    "code_name": "illes-balears"
+  }, 
+  {
+    "pretty_name": "Burgos", 
+    "code_number": "9", 
+    "code_name": "burgos"
+  }, 
+  {
+    "pretty_name": "Cáceres", 
+    "code_number": "10", 
+    "code_name": "caceres"
+  }, 
+  {
+    "pretty_name": "Cádiz", 
+    "code_number": "11", 
+    "code_name": "cadiz"
+  }, 
+  {
+    "pretty_name": "Cantabria", 
+    "code_number": "39", 
+    "code_name": "cantabria"
+  }, 
+  {
+    "pretty_name": "Castellón", 
+    "code_number": "12", 
+    "code_name": "castellon"
+  }, 
+  {
+    "pretty_name": "Ciudad Real", 
+    "code_number": "13", 
+    "code_name": "ciudad-real"
+  }, 
+  {
+    "pretty_name": "Córdoba", 
+    "code_number": "14", 
+    "code_name": "cordoba"
+  }, 
+  {
+    "pretty_name": "A Coruña", 
+    "code_number": "15", 
+    "code_name": "a-coruna"
+  }, 
+  {
+    "pretty_name": "Cuenca", 
+    "code_number": "16", 
+    "code_name": "cuenca"
+  }, 
+  {
+    "pretty_name": "Granada", 
+    "code_number": "18", 
+    "code_name": "granada"
+  }, 
+  {
+    "pretty_name": "Guadalajara", 
+    "code_number": "19", 
+    "code_name": "guadalajara"
+  }, 
+  {
+    "pretty_name": "Huelva", 
+    "code_number": "21", 
+    "code_name": "huelva"
+  }, 
+  {
+    "pretty_name": "Huesca", 
+    "code_number": "22", 
+    "code_name": "huesca"
+  }, 
+  {
+    "pretty_name": "Jaén", 
+    "code_number": "23", 
+    "code_name": "jaen"
+  }, 
+  {
+    "pretty_name": "León", 
+    "code_number": "24", 
+    "code_name": "leon"
+  }, 
+  {
+    "pretty_name": "Lugo", 
+    "code_number": "27", 
+    "code_name": "lugo"
+  }, 
+  {
+    "pretty_name": "Madrid", 
+    "code_number": "28", 
+    "code_name": "madrid"
+  }, 
+  {
+    "pretty_name": "Málaga", 
+    "code_number": "29", 
+    "code_name": "malaga"
+  }, 
+  {
+    "pretty_name": "Murcia", 
+    "code_number": "30", 
+    "code_name": "murcia"
+  }, 
+  {
+    "pretty_name": "Navarra", 
+    "code_number": "31", 
+    "code_name": "navarra"
+  }, 
+  {
+    "pretty_name": "Ourense", 
+    "code_number": "32", 
+    "code_name": "ourense"
+  }, 
+  {
+    "pretty_name": "Palencia", 
+    "code_number": "34", 
+    "code_name": "palencia"
+  }, 
+  {
+    "pretty_name": "Palmas, Las", 
+    "code_number": "35", 
+    "code_name": "las-palmas"
+  }, 
+  {
+    "pretty_name": "Pontevedra", 
+    "code_number": "36", 
+    "code_name": "pontevedra"
+  }, 
+  {
+    "pretty_name": "Rioja, La", 
+    "code_number": "26", 
+    "code_name": "la-rioja"
+  }, 
+  {
+    "pretty_name": "Salamanca", 
+    "code_number": "37", 
+    "code_name": "salamanca"
+  }, 
+  {
+    "pretty_name": "Santa Cruz de Tenerife", 
+    "code_number": "38", 
+    "code_name": "santa-cruz-de-tenerife"
+  }, 
+  {
+    "pretty_name": "Segovia", 
+    "code_number": "40", 
+    "code_name": "segovia"
+  }, 
+  {
+    "pretty_name": "Sevilla", 
+    "code_number": "41", 
+    "code_name": "sevilla"
+  }, 
+  {
+    "pretty_name": "Soria", 
+    "code_number": "42", 
+    "code_name": "soria"
+  }, 
+  {
+    "pretty_name": "Teruel", 
+    "code_number": "44", 
+    "code_name": "teruel"
+  }, 
+  {
+    "pretty_name": "Toledo", 
+    "code_number": "45", 
+    "code_name": "toledo"
+  }, 
+  {
+    "pretty_name": "Valencia", 
+    "code_number": "46", 
+    "code_name": "valencia"
+  }, 
+  {
+    "pretty_name": "Valladolid", 
+    "code_number": "47", 
+    "code_name": "valladolid"
+  }, 
+  {
+    "pretty_name": "Zamora", 
+    "code_number": "49", 
+    "code_name": "zamora"
+  }, 
+  {
+    "pretty_name": "Zaragoza", 
+    "code_number": "50", 
+    "code_name": "zaragoza"
+  }
+]
