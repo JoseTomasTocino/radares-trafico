@@ -1,5 +1,5 @@
 # radares-trafico
-Scraper para los radares de tráfico de la web de la DGT.
+Scraper para los radares de tráfico de la web de la DGT. Los radares para Cádiz se pueden ver en http://josetomastocino.github.io/radares-trafico/
 
 ## Contexto y motivación
 
