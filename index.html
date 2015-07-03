@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+function initialize()
+{
+  var mapCenter = new google.maps.LatLng(36.567012, -5.730743);
+  var mapOptions = {
+    zoom: 9,
+    center: mapCenter
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    // Load the JSON
+    $.getJSON("radars.json", function(data)
+    {
+        data.forEach(function(radar)
+        {
+            // Turn the GPS coordinates into google maps elements
+            var coordinates = radar.kms_gps.map(function(point)
+            {
+                return new google.maps.LatLng(point.lat, point.lng);
+            });
+
+            // If this is a fixed radar, draw a circle
+            if (radar.kms_gps.length == 1)
+            {
+                var circle = new google.maps.Circle({
+                    center: coordinates[0],
+                    radius: 500,
+                    strokeColor: '#ff0000',
+                    fillColor: '#00ff00',
+                    map: map
+                });
+            }
+
+            // If it's a mobile radar, draw the path of possible positions
+            else
+            {
+                var line = new google.maps.Polyline({
+                    path: coordinates,
+                    geodesic: true,
+                    map: map
+                });
+
+                radar.kms_gps.forEach(function(point)
+                {
+                    var circle = new google.maps.Circle({
+                        center: point,
+                        radius: 100,
+                        strokeColor: '#00ff00',
+                        fillColor: '#00ff00',
+                        map: map
+                    });
+                });//
+            }
+
+
+        });
+    });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
