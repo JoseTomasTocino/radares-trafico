@@ -23,6 +23,19 @@ function initialize()
     center: mapCenter
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var infowindow = new google.maps.InfoWindow({
+        map: map
+    });
+
+  function createInfoWindow(poly,content) {
+    google.maps.event.addListener(poly, 'click', function(event)
+    {
+        console.log("TROLOLOLOLOLOLO");
+        infowindow.setContent(content);
+        infowindow.setPosition(event.latLng);
+        infowindow.open(map);
+    });
+}
 
     // Load the JSON
     $.getJSON("radars.json", function(data)
@@ -50,12 +63,16 @@ function initialize()
             // If it's a mobile radar, draw the path of possible positions
             else
             {
+                // Join the points using a polyline
                 var line = new google.maps.Polyline({
                     path: coordinates,
                     geodesic: true,
                     map: map
                 });
 
+                createInfoWindow(line, radar.kind + " en " + radar.province + " en la " + radar.road)
+
+                // Draw a circle at each interpolated km
                 radar.kms_gps.forEach(function(point)
                 {
                     var circle = new google.maps.Circle({
@@ -65,10 +82,9 @@ function initialize()
                         fillColor: '#00ff00',
                         map: map
                     });
-                });//
+                });
+
             }
-
-
         });
     });
 

@@ -63,3 +63,13 @@ Hecho esto, solo resta ejecutar los scripts en su orden:
 
 Esto generará los ficheros `.json` con la información. 
 
+### Frontend de prueba
+
+En el fichero `index.html` hay un fichero con un frontend que muestra un Google Maps con los radares de la provincia de Cádiz, cargados desde el fichero `radars.json`. Para que funcione es necesario lanzar la web desde un servidor, se puede hacer fácilmente con
+
+    python -m SimpleHTTPServer
+
+Y entrar en la web desde `http://localhost:8000`.
+
+
+
